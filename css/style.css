@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#system{
+    display: flex;
+    flex-direction: row;
+}
+
+#coin-selector{
+    background-color: black;
+    max-width: 15%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100vh;
+}
+
+.div-coin{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    transition: 0.4s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.div-coin:hover{
+    background-color: azure;
+    color: black;
+}
+
+
+.icon-coin{
+    max-width: 20%;
+    padding-right: 5px;
+}
+
+#logo-coin{
+    max-width: 20%;
+    padding: 40px 0px;
+}
+
+#display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.info-box{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    min-width: 20%;
+    margin: 0px 8px;
+    text-align: center;
+}
+
+/* SCROLL */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: azure black;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: azure;
+    border-radius: 20px;
+    border: 3px solid black;
+  }
